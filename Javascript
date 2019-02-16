@@ -1,0 +1,25 @@
+/*We'll create a secret message with an array.*/
+
+//First let's set up an array to hold various words.
+let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '-2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
+
+//We'll remove the last string of the above array.
+secretMessage.pop();
+
+//Add in two words to our array.
+secretMessage.push("to", "Program");
+
+//Modify the word "easily" to be "right".
+secretMessage[7] = "right";
+
+//Remove the first string.
+secretMessage.shift();
+
+//Add "Programming" to the start.
+secretMessage.unshift("Programming");
+
+//Now we'll remove several strings and replace them with a single one.
+secretMessage.splice(6, 5, "know");
+
+//Finally, we'll join everything to reveal the secret message, a quote from Chris Pine.
+console.log(secretMessage.join(" "));
